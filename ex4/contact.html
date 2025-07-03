@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Thanh Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar" href="#">
+        <img src="image/logo.jpg" alt="logo" height="50">
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item bg-primary"><a class="nav-link text-white border border-dark" href="#">Trang chủ</a></li>
+          <li class="nav-item bg-primary"><a class="nav-link text-white border border-dark" href="#">Dịch vụ</a></li>
+          <li class="nav-item bg-primary"><a class="nav-link text-white border border-dark" href="#">Về chúng tôi</a></li>
+          <li class="nav-item bg-primary"><a class="nav-link text-white border border-dark" href="#">FAQ</a></li>
+          <li class="nav-item bg-primary"><a class="nav-link text-white border border-dark" href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Đoạn nội dung -->
+<div class="container mt-4">
+    <h3>Liên hệ với chúng tôi!</h3>
+    <p>
+      Chúng tôi mong muốn lắng nghe từ bạn. Hãy liên hệ với chúng tôi và một thành viên của chúng tôi
+      sẽ liên lạc với bạn trong thời gian sớm nhất. Chúng tôi yêu thích việc nhận được email của bạn mỗi ngày.
+    </p>
+
+    <div class="row">
+      <!-- Form liên hệ -->
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Tên của bạn</label>
+            <input type="text" class="form-control" id="name" placeholder="Tên của bạn">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email của bạn</label>
+            <input type="email" class="form-control" id="email" placeholder="Email của bạn">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Nội dung</label>
+            <textarea class="form-control" id="message" rows="3" placeholder=""></textarea>
+          </div>
+        </form>
+      </div>
+
+      <!-- Bản đồ -->
+      <div class="col-md-4">
+        <h5>Bản đồ</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15729855.42909206!2d96.7382165931671!3d15.735434000981483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31157a4d736a1e5f%3A0xb03bb0c9e2fe62be!2zVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1445179448264"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p class="mt-2"><a href="#">Xem bản đồ</a></p>
+        <p>Địa chỉ 1.<br>Địa chỉ 2.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phần cuối Footer -->
+  <footer class="bg-light mt-5 py-3 border-top">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <p class="mb-0">© Bản quyền thuộc về Công ty Du lịch Bụi.</p>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link px-2" href="#">Trang chủ</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Dịch vụ</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Về chúng tôi</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#">Liên hệ</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

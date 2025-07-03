@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng Nhập</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5 text-center border p-4">
+    <h3>Mở biểu mẫu đăng nhập</h3>
+    <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Mở hộp thoại
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content border">
+      <div class="modal-header justify-content-center">
+        <h5 class="modal-title" id="loginModalLabel">
+          <i class="fa fa-lock me-2"></i> Đăng nhập
+        </h5>
+        <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+        
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label"><i class="fa fa-user"></i> Người dùng:</label>
+              <input type="text" class="form-control" id="username" placeholder="Nhập tên người dùng">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label"><i class="fa fa-eye"></i> Mật khẩu:</label>
+              <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Ghi nhớ tôi</label>
+            </div>
+            <button type="submit" class="btn btn-success w-100">
+              <i class="fa fa-power-off"></i>  Đăng nhập
+            </button>
+          </form>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+            <i class="fa fa-times"></i> Hủy bỏ
+          </button>
+          <div class="text-end">
+            <small>
+              Bạn chưa phải là thành viên? <a href="#">Đăng ký</a><br>
+              Quên <a href="#">mật khẩu?</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
